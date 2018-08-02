@@ -1,0 +1,40 @@
+ <div class="col-xs-12 col-sm-6">
+      <div class="form-ingredient">
+        <h4>Add ingredient :</h4>
+        <%= simple_form_for [ @cocktail, @dose ] do |f| %>
+          <%= f.association :ingredient, prompt: "Choose an ingredient" %>
+          <%= f.input :description, label: "Quantity" %>
+          <%= f.submit "Add", class: "submit" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+
+ <div class="col-xs-12 col-sm-6">
+
+        <h4><%= @cocktail.name %></h4>
+
+        <% @cocktail.doses.each do |d| %>
+          <%= d.description %>
+          <%= d.ingredient.name %>
+        <% end %>
+
+    </div>
+
+
+    <div class="col-xs-12 col-sm-6">
+
+      <%= simple_form_for [ @cocktail, @review ] do |f| %>
+          <%= f.input :your_name %>
+          <%= f.input :rating %>
+          <%= f.input :content, label: "Your review" %>
+          <%= f.submit "Add a review", class: "submit" %>
+        <% end %>
+
+      </div>
+
+
+
+
+<%= link_to "Back to cocktails", cocktails_path %>

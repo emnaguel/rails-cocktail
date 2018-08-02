@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="create-recipe">
+    <div class="create-form">
+  <h1>CREATE A NEW COCKTAIL</h1>
+
+  <%= simple_form_for @cocktail do |f| %>
+    <%= f.input :name %>
+    <%= f.input :photo_url, placeholder: "https://kitt.lewagon.com/placeholder/cities/shanghai" %>
+
+
+    <%= f.submit "Create a cocktail", class: "submit", id: "sweet-alert-demo" %>
+  <% end %>
+</div>
+</div>
+</div>

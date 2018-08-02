@@ -2,6 +2,7 @@
   "name": "rails-cocktail",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0",
     "@rails/webpacker": "3.5"
   },
   "devDependencies": {

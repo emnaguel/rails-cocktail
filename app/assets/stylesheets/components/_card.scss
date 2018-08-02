@@ -1,0 +1,29 @@
+.container {
+  background-color: #460187;
+  width: 100vw;
+  height: calc(100vh - 140px)
+}
+
+.card {
+  height: 300px;
+  width: 300px;
+  border: solid;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+
+}
+
+.card-link {
+  text-decoration: none !important;
+  color: black;
+  text-align: center;
+  display: flex;
+}
+
+.card-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

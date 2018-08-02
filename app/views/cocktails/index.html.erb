@@ -1,0 +1,15 @@
+<div class="container">
+  <h1 class="text-center first-title">Our Cocktails </h1>
+    <div class="row">
+      <div class="card-all">
+        <% @cocktails.each do |c| %>
+      <div class="card" style="background-image: url('<%= c.photo_url %>'); background-position: center;">
+        <h2><%= link_to c.name, cocktail_path(c.id), class: "card-link" %></h2>
+      </div>
+      <% end %>
+      </div>
+
+  </div>
+  <%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-primary" %>
+</div>
+
