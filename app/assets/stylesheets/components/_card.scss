@@ -1,4 +1,4 @@
-.container {
+.container-index {
   background-color: #460187;
   width: 100vw;
   height: calc(100vh - 140px)
@@ -26,4 +26,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.container {
+  height: calc(100vh - 50px - 70px);
 }
