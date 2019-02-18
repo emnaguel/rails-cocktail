@@ -4,18 +4,22 @@
 
 
 <div class="container-new">
-  <div class="create-recipe">
-    <div class="create-form">
-  <h1>CREATE A NEW COCKTAIL</h1>
+  <div class="row">
+      <h1 class="text-center first-title">CREATE A NEW COCKTAIL</h1>
+  </div>
 
-  <%= simple_form_for @cocktail do |f| %>
-    <%= f.input :name %>
-    <%= f.input :photo %>
-    <%= f.input :photo_cache, as: :hidden %>
-    <%= f.submit "Create a cocktail", class: "submit", id: "sweet-alert-demo" %>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-sm-offset-4 new-form">
 
 
-  <% end %>
-</div>
-</div>
+
+      <%= simple_form_for @cocktail do |f| %>
+        <%= f.input :name %>
+        <%= f.input :photo %>
+        <%= f.input :photo_cache, as: :hidden %>
+        <%= f.submit "Create a cocktail", class: "submit", id: "sweet-alert-demo" %>
+      <% end %>
+
+    </div>
+  </div>
 </div>

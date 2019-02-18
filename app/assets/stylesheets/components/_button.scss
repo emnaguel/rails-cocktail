@@ -1,24 +1,42 @@
+.body {
+  background-color: white;
+}
+
+
 
 .btn-yellow {
-  color: white;
-  text-transform: uppercase;
+  color: #460187;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
   text-decoration: none;
   opacity: 0.7;
   font-size: 100px;
-  padding-top: 40px;
-  font-family: 'Pacifico', cursive;
-color: red;
+  background-color: white;
 }
 
 .btn-yellow:hover {
   text-decoration: none;
-  color: yellow;
+  color: #460187;
 
 }
 
 .btn-primary {
+    color: #fff;
+    background-color: #460187;
+    border-color: #460187;
+    position: relative;
+    /* bottom: -23px; */
+    /* top: 123%; */
+    left: 45%;
+    /* border-radius: 30%; */
+    box-shadow: 0 0 black;
+    /* bottom: -32px; */
+    top: 42px;
+}
 
+.btn-primary:hover {
+  color: #460187;
+  background-color: white;
+  border-color: #460187;
 }
